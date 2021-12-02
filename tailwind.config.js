@@ -7,7 +7,8 @@ module.exports = {
         "cdark": '#363d4b',
         "cnordic": '#434c5e',
         "cwhite": '#e9e9e9',
-        "csecond": '477cda'
+        "csecond": '#748E9C',
+        "caccent": '#EF3E23'
       },
     },
     fontFamily: {

@@ -1,17 +1,18 @@
 import type { NextPage } from "next";
-// import tw from "tailwind-styled-components"
-// import Image from 'next/image'
-// import Photoku from "../assets/imgs/yoot.png"
+import HeroSection from './components/Home/HeroSection'
 import Layout from "../pages/components/Layout";
-
+import SecondSection from "./components/Home/SecondSection"
 const Home: NextPage = () => {
   return (
     <>
       <Layout pageTitle="Home">
-        <section className="container">DI SINI HERO SECTION</section>
+        <HeroSection />
+        <SecondSection />
       </Layout>
     </>
   );
 };
 
 export default Home;
+
+
