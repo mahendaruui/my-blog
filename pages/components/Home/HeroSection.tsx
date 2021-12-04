@@ -1,7 +1,9 @@
 import tw from "tailwind-styled-components";
 // import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faFacebook, faInstagram, faTwitter, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram, faTwitter, faLinkedinIn, faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import Link from 'next/link'
 export default function HeroSection() {
   return (
     <>
@@ -15,25 +17,41 @@ export default function HeroSection() {
           <p className="text-lg md:text-xl">Mahendar Dwi Payana</p>
           <p>Lecturer - Web Developer - Data Science</p>
           <div className="mt-3 flex justify-between">
-            <span>
-              <FontAwesomeIcon className="h-5" icon={faFacebook} />
-            </span>
-            <span>
-              <FontAwesomeIcon className="h-5" icon={faInstagram} />
-            </span>
-            <span>
-              <FontAwesomeIcon className="h-5" icon={faTwitter} />
-            </span>
-            <span>
-              <FontAwesomeIcon className="h-5" icon={faLinkedinIn} />
-            </span>
-            <span>
-              <FontAwesomeIcon className="h-5" icon={faGithub} />
-            </span>
+            <Link href="https://www.instagram.com/hendartea/">
+              <a className="cursor-pointer" target="_blank" title="instagram">
+                <FontAwesomeIcon className="h-5" icon={faInstagram} />
+              </a>
+            </Link>
+            <Link href="https://twitter.com/hendartea">
+              <a className="cursor-pointer" target="_blank" title="twitter">
+                <FontAwesomeIcon className="h-5" icon={faTwitter} />
+              </a>
+            </Link>
+            <Link href="https://www.linkedin.com/in/mahendar-dwipayana-4ba1a076/">
+              <a className="cursor-pointer" target="_blank" title="linkedIn">
+                <FontAwesomeIcon className="h-5" icon={faLinkedinIn} />
+              </a>
+            </Link>
+            <Link href="https://github.com/mahendaruui">
+              <a className="cursor-pointer" target="_blank" title="office github">
+                <FontAwesomeIcon className="h-5" icon={faGithub} />
+              </a>
+            </Link>
+            <Link href="https://github.com/mahendartea">
+              <a className="cursor-pointer" target="_blank" title="private github">
+                <FontAwesomeIcon className="h-5" icon={faGithubSquare} />
+              </a>
+            </Link>
           </div>
           <div className="flex mx-auto mt-5 justify-center">
-            <img src="notion-logo-no-background.png" className="h-5 px-1" alt="notion" />
-            <p className="px-1">Detail</p>
+            <img src="notion-logo-no-background.png" className="h-4" alt="notion" />
+            <Link href="">
+              <a className="px-1 cursor pointer px-2" title="detail" target="_blank">Detail </a>
+            </Link>
+            <FontAwesomeIcon className="h-4 px-1" icon={faFilePdf} />
+            <Link href="">
+              <a className="px-1 underline cursor-pointer">Download CV</a>
+            </Link>
           </div>
         </ProfilDesc>
         <DescHero >
