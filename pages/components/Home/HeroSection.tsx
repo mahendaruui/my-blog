@@ -10,12 +10,11 @@ export default function HeroSection() {
       <SectionHero>
         {/* <Image src="../assets/imgs/yoot.png" height='500' width="500" layout="fill" /> */}
         <ProfilImage>
-          <img src="/imgs/yoot.png" alt="foto" height="130" width="150" className="rounded-2xl shadow-md bg-cdark" />
+          <img src="/imgs/yoot.png" alt="foto" height="130" width="150" className="rounded-2xl shadow-md bg-cdark mt-4" />
         </ProfilImage>
-
         <ProfilDesc >
           <p className="text-lg md:text-xl">Mahendar Dwi Payana</p>
-          <p>Lecturer - Web Developer - Data Science</p>
+          <p>Lecturer - Web Developer - Data Scientist</p>
           <div className="mt-3 flex justify-between">
             <Link href="https://www.instagram.com/hendartea/">
               <a className="cursor-pointer" target="_blank" title="instagram">
