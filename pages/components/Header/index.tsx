@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the 
 import { faBars, faSignature } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import React from "react";
 import tw from "tailwind-styled-components";
+import Signature from "../Logo/signature"
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -14,7 +15,8 @@ export default function Header() {
           <div className="flex justify-between mx-auto">
             <Link href="/">
               <p className="cursor-pointer flex text-cwhite font-extrabold text-2xl font-dancy">
-                <FontAwesomeIcon className="h-8 px-3" icon={faSignature} />
+                {/* <FontAwesomeIcon className="h-8 px-3" icon={faSignature} /> */}
+                <Signature />
                 Mahendar Dwi Payana
               </p>
             </Link>
