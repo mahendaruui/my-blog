@@ -5,7 +5,7 @@ function Signature() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       // ariaHidden="true"
-      className="svg-inline--fa fa-signature fa-w-20 h-8 px-3"
+      className=" fa-signature fa-w-20 h-8 px-3"
       data-icon="signature"
       data-prefix="fas"
       viewBox="0 0 640 512"
