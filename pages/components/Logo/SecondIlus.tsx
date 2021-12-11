@@ -8,7 +8,7 @@ function SecondIlus() {
       height="587.676"
       data-name="Layer 1"
       viewBox="0 0 829.131 587.676"
-      className="absolute h-52 hidden md:flex md:-bottom-8 md:left-1/3 z-0"
+      className="absolute h-52 hidden md:flex md:-bottom-12 md:left-1/3 z-0"
     >
       <path
         fill="#ffb6b6"
@@ -439,4 +439,3 @@ function SecondIlus() {
 }
 
 export default SecondIlus;
-

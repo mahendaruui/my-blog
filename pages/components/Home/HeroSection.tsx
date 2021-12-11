@@ -4,13 +4,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the 
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram, faTwitter, faLinkedinIn, faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link'
+import Image from 'next/image'
 export default function HeroSection() {
   return (
     <>
       <SectionHero>
         {/* <Image src="../assets/imgs/yoot.png" height='500' width="500" layout="fill" /> */}
         <ProfilImage>
-          <img src="/imgs/yoot.png" alt="foto" height="130" width="150" className="rounded-2xl shadow-md bg-cdark mt-4" />
+          {/* <img src="/imgs/yoot.png" alt="foto" height="130" width="150" className="rounded-2xl shadow-md bg-cdark mt-4" /> */}
+          <Image src="/imgs/yoot.png" alt="foto" height="220" width="150" className="rounded-2xl shadow-md bg-cdark mt-4" />
         </ProfilImage>
         <ProfilDesc >
           <p className="text-lg md:text-xl">Mahendar Dwi Payana</p>
@@ -43,13 +45,14 @@ export default function HeroSection() {
             </Link>
           </div>
           <div className="flex mx-auto mt-5 justify-center">
-            <img src="notion-logo-no-background.png" className="h-4" alt="notion" />
-            <Link href="">
+            <Image src="/notion-logo-no-background.png" alt="notion" className="" height="8" width="18" />
+            {/* <img src="notion-logo-no-background.png" className="h-4" alt="notion" /> */}
+            <Link href="https://aquatic-shovel-5ca.notion.site/Portofolio-b7e26d40365f48c5a4ffcf23af8a767b">
               <a className="px-1 cursor pointer px-2" title="detail" target="_blank">Detail </a>
             </Link>
             <FontAwesomeIcon className="h-4 px-1" icon={faFilePdf} />
-            <Link href="">
-              <a className="px-1 underline cursor-pointer">Download CV</a>
+            <Link href="/CV Mahendar Dwi Payana.pdf" >
+              <a className="px-1 underline cursor-pointer" target="_blank" title="CV">Download CV</a>
             </Link>
           </div>
         </ProfilDesc>

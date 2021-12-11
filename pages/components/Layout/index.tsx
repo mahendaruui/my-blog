@@ -1,14 +1,14 @@
-import { ReactNode } from 'react'
-import Head from "next/head"
-import Header from "../Header"
-import Footer from "../Footer"
+import { ReactNode } from "react";
+import Head from "next/head";
+import Header from "../Header";
+import Footer from "../Footer";
 interface LayoutProps {
-  children: ReactNode
-  pageTitle: string
+  children: ReactNode;
+  pageTitle: string;
 }
 
 export default function Layout(props: LayoutProps) {
-  const { children, pageTitle } = props
+  const { children, pageTitle } = props;
   return (
     <div>
       <Head>
@@ -29,13 +29,18 @@ export default function Layout(props: LayoutProps) {
         />
       </Head>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true' />
-      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="true"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+        rel="stylesheet"
+      />
       <Header />
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
       <Footer />
     </div>
-  )
+  );
 }

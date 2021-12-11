@@ -12,7 +12,7 @@ export default function Header() {
     <>
       <Head>
         <Nav>
-          <div className="flex justify-between mx-auto">
+          <div className="flex justify-between mx-auto items-center">
             <Link href="/">
               <p className="cursor-pointer flex text-cwhite font-extrabold text-2xl font-dancy">
                 {/* <FontAwesomeIcon className="h-8 px-3" icon={faSignature} /> */}
