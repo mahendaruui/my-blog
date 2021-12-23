@@ -20,7 +20,7 @@ export default function Header() {
                 Mahendar Dwi Payana
               </p>
             </Link>
-            <ul className="text-cwhite hidden md:flex flex-1 justify-end items-center gap-12 text-port-blue uppercase">
+            <ul className="text-cwhite font-slap hidden md:flex flex-1 justify-end items-center gap-12 text-port-blue uppercase">
               <Link href="/about">
                 <li className="cursor-pointer">About</li>
               </Link>
@@ -40,7 +40,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="md:border-0 px-2 ">
+          <div className="md:border-0 px-2 font-slap">
             {/* <div className="{isMenuOpen? : 'sm:hidden':'hidden'}sm:hidden text-left mt-10 md:mt-0"> */}
             <div className={isOpen ? "sm:hidden" : "hidden"}>
               <Link href="/about">
