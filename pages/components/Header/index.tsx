@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the 
 import { faBars, faSignature } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import React from "react";
 import tw from "tailwind-styled-components";
-import Signature from "../Logo/signature"
+import Signature from "../Logo/signature";
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);

@@ -14,7 +14,7 @@ export default function ThirdSection() {
     {
       id: 3,
       lang: "NodeJs",
-      ket: "API"
+      ket: "API",
     },
     {
       id: 4,
@@ -24,18 +24,18 @@ export default function ThirdSection() {
     {
       id: 5,
       lang: "Database",
-      ket: "SQL, NoSQL"
+      ket: "SQL, NoSQL",
     },
     {
       id: 6,
       lang: "Version Control",
-      ket: "git, gitlab, github"
+      ket: "git, gitlab, github",
     },
     {
       id: 7,
       lang: "DevOps",
-      ket: "docker"
-    }
+      ket: "docker",
+    },
   ];
   return (
     <div className="bg-cdark py-5">
@@ -45,31 +45,28 @@ export default function ThirdSection() {
         </h1>
 
         <WrapTS>
-          <div className="sm:w-1/2 bg-gray-800 p-10">
+          <div className="sm:w-1/2 bg-gray-800 py-7 px-12">
             <p className="uppercase font-bold mb-5">Skills</p>
             <ul className="text-left list-decimal">
-              {
-                skill.map((item) => {
-                  return (
-                    <li key={item.id} className="capitalize">{item.lang} ({item.ket})</li>
-                  )
-
-                })
-
-              }
+              {skill.map((item) => {
+                return (
+                  <li key={item.id} className="capitalize">
+                    {item.lang} ({item.ket})
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
-          <div className="text-center sm:w-1/2 bg-gray-600 p-10">
+          <div className="sm:w-1/2 bg-gray-600 py-7 px-12">
             <p className="uppercase font-bold mb-5">Experiences</p>
-
             <ul className="text-left list-decimal">
               <li>
                 Working at State Office <span>(3 Years as IT Support)</span>
               </li>
               <li>
-                Lecturer at Ubudiyah University (Since 2016 until now. Teaching
-                at Science and Techology)
+                Lecturer (Since 2016 until now. Teaching at Science and
+                Techology)
               </li>
               <li>Director of ICT Department at Ubudiyah University</li>
             </ul>
