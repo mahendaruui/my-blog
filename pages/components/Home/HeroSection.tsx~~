@@ -40,7 +40,7 @@ export default function HeroSection() {
                 <FontAwesomeIcon className="h-5" icon={faTwitter} />
               </a>
             </Link>
-            <Link href="https://www.linkedin.com/in/mahendar-dwipayana-4ba1a076/">
+                  <Link href="https://www.linkedin.com/in/mahendar-dwipayana-4ba1a076/">
               <a className="cursor-pointer" target="_blank" title="linkedIn">
                 <FontAwesomeIcon className="h-5" icon={faLinkedinIn} />
               </a>
