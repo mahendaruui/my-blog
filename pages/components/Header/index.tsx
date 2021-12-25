@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/link-passhref */
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faBars, faSignature } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import { faBars } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import React from "react";
 import tw from "tailwind-styled-components";
 import Signature from "../Logo/signature";
@@ -15,20 +15,25 @@ export default function Header() {
           <div className="flex justify-between mx-auto items-center">
             <Link href="/">
               <p className="cursor-pointer flex text-cwhite font-extrabold text-2xl font-dancy">
-                {/* <FontAwesomeIcon className="h-8 px-3" icon={faSignature} /> */}
                 <Signature />
-                Mahendar Dwi Payana
+                <span>Mahendar Dwi Payana</span>
               </p>
             </Link>
-            <ul className="text-cwhite font-slap hidden md:flex flex-1 justify-end items-center gap-12 text-port-blue uppercase">
-              <Link href="/about">
-                <li className="cursor-pointer">About</li>
-              </Link>
+            <ul className="text-cwhite font-slap hidden sm:flex flex-1 justify-end items-center gap-2 md:gap-12 text-port-blue uppercase">
               <Link href="/contact">
-                <li className="cursor-pointer">Contact</li>
+                <li className="cursor-pointer hover:bg-cnordic px-2 py-2 rounded-sm">
+                  Contact
+                </li>
               </Link>
-              <Link href="/product">
-                <li className="cursor-pointer">Product</li>
+              <Link href="/myapp">
+                <li className="cursor-pointer hover:bg-cnordic px-2 py-2 rounded-sm">
+                  Applications
+                </li>
+              </Link>
+              <Link href="/achive">
+                <li className="cursor-pointer hover:bg-cnordic px-2 py-2 rounded-sm">
+                  Achievements
+                </li>
               </Link>
             </ul>
 
@@ -40,22 +45,22 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="md:border-0 px-2 font-slap">
+          <div className="sm:border-0 px-2 font-slap">
             {/* <div className="{isMenuOpen? : 'sm:hidden':'hidden'}sm:hidden text-left mt-10 md:mt-0"> */}
             <div className={isOpen ? "sm:hidden" : "hidden"}>
               <Link href="/about">
-                <p className="mt-3 md:mx-3 text-cwhite cursor-pointer ">
-                  About
-                </p>
-              </Link>
-              <Link href="/contact">
-                <p className="mt-3 md:mx-3 text-cwhite  cursor-pointer ">
+                <p className="mt-3 sm:mx-3 text-cwhite cursor-pointer hover:bg-cnordic px-5 py-2 rounded-sm">
                   Contact
                 </p>
               </Link>
+              <Link href="/contact">
+                <p className="mt-3 sm:mx-3 text-cwhite  cursor-pointer hover:bg-cnordic px-5 py-2 rounded-sm">
+                  Applications
+                </p>
+              </Link>
               <Link href="/product">
-                <p className="mt-3 md:mx-3 text-cwhite  cursor-pointer border-b-1">
-                  Product
+                <p className="mt-3 sm:mx-3 text-cwhite  cursor-pointer border-b-1 hover:bg-cnordic px-5 py-2 rounded-sm">
+                 Achievements
                 </p>
               </Link>
             </div>

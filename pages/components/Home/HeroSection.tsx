@@ -104,7 +104,7 @@ export default function HeroSection() {
   );
 }
 
-const SectionHero = tw.div`flex flex-col font-slap items-center py-10 mx-auto bg-gradient-to-r from-cdark via-cnordic to-cdark shadow-lg divide-y`;
+const SectionHero = tw.div`flex flex-col font-slap items-center py-10 mx-auto bg-cnordic shadow-lg divide-y`;
 const ProfilImage = tw.div``;
 const ProfilDesc = tw.div`text-center text-sm my-5 pt-2 text-shadow-lg text-cwhite `;
 const DescHero = tw.div`text-center text-shadow-md`;

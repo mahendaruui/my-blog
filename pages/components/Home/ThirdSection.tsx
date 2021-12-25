@@ -66,7 +66,7 @@ export default function ThirdSection() {
               </li>
               <li>
                 Lecturer (Since 2016 until now. Teaching at Science and
-                Techology)
+                Techology Faculty)
               </li>
               <li>Director of ICT Department at Ubudiyah University</li>
             </ul>
