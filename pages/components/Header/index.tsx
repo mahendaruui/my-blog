@@ -48,19 +48,19 @@ export default function Header() {
           <div className="sm:border-0 px-2 font-slap">
             {/* <div className="{isMenuOpen? : 'sm:hidden':'hidden'}sm:hidden text-left mt-10 md:mt-0"> */}
             <div className={isOpen ? "sm:hidden" : "hidden"}>
-              <Link href="/about">
+              <Link href="/contact">
                 <p className="mt-3 sm:mx-3 text-cwhite cursor-pointer hover:bg-cnordic px-5 py-2 rounded-sm">
                   Contact
                 </p>
               </Link>
-              <Link href="/contact">
+              <Link href="/myapp">
                 <p className="mt-3 sm:mx-3 text-cwhite  cursor-pointer hover:bg-cnordic px-5 py-2 rounded-sm">
                   Applications
                 </p>
               </Link>
-              <Link href="/product">
+              <Link href="/achive">
                 <p className="mt-3 sm:mx-3 text-cwhite  cursor-pointer border-b-1 hover:bg-cnordic px-5 py-2 rounded-sm">
-                 Achievements
+                  Achievements
                 </p>
               </Link>
             </div>
