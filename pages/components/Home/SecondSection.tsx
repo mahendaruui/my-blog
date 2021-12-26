@@ -4,7 +4,7 @@ export default function SecondSection() {
   return (
     <WrapSec className="z-10 ...">
       <TitleSection>
-        <p className="text-center text-3xl pt-10 underline uppercase">
+        <p className="text-center text-3xl pt-10  uppercase">
           Background
         </p>
       </TitleSection>
@@ -52,4 +52,4 @@ export default function SecondSection() {
 
 const WrapSec = tw.div`px-5 bg-gray-500 font-slap text-gray-300 h-auto pb-16`;
 const Container = tw.div`relative container mx-auto flex flex-col md:flex-row items-start justify-between py-5 text-center`;
-const TitleSection = tw.div``;
+const TitleSection = tw.div`border-b-2 border-gray-200 container mx-auto`;

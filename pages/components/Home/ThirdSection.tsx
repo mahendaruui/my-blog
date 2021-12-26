@@ -40,7 +40,7 @@ export default function ThirdSection() {
   return (
     <div className="bg-cdark py-5">
       <ContainerTS>
-        <h1 className="border-b-2 border-gray-400 pb-3">
+        <h1 className="border-b-2 text-3xl border-gray-400 pb-3">
           Skills & Experiences
         </h1>
 
