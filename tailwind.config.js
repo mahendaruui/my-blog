@@ -8,7 +8,6 @@ module.exports = {
         "cnordic": '#434c5e',
         "cwhite": '#e9e9e9',
         "csecond": '#748E9C',
-        "caccent": '#EF3E23'
       },
     },
     fontFamily: {

@@ -22,7 +22,9 @@ export default function Layout(props: LayoutProps) {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
       <Header />
-      <div>{children}</div>
+      <div className="bg-cdark">
+        {children}
+      </div>
       <Footer />
     </>
   );
