@@ -43,7 +43,6 @@ export default function ThirdSection() {
         <h1 className="border-b-2 text-3xl border-gray-400 pb-3">
           Skills & Experiences
         </h1>
-
         <WrapTS>
           <div className="sm:w-1/2 bg-gray-800 py-7 px-12">
             <p className="uppercase font-bold mb-5">Skills</p>

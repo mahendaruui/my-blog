@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="flex justify-between px-10 py-10 text-cwhite items-center font-slap container mx-auto">
         <div>
           <p className="font-semibold ">Detail Description</p>
-             <p className="text-xs py-2">
+          <p className="text-xs py-2">
             For more details, please visit the link notion listed in the hero
             section above.
           </p>

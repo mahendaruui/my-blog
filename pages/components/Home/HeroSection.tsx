@@ -73,7 +73,7 @@ export default function HeroSection() {
               width="18"
             />
             {/* <img src="notion-logo-no-background.png" className="h-4" alt="notion" /> */}
-            <Link href="https://aquatic-shovel-5ca.notion.site/Portofolio-b7e26d40365f48c5a4ffcf23af8a767b">
+            <Link href="https://mahendudes.notion.site/Portfolio-b7e26d40365f48c5a4ffcf23af8a767b">
               <a className="cursor pointer px-2" title="detail" target="_blank">
                 Detail{" "}
               </a>
